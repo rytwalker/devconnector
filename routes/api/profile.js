@@ -2,9 +2,12 @@ const express = require('express');
 const router = express.Router();
 
 // @route   GET api/users
-// @desc    Test route
+// @desc    Register user
 // @access  Public
 
-router.get('/', (req, res) => res.send('Profile router'));
+router.post('/', (req, res) => {
+  console.log(req.body);
+  res.send('Profile router');
+});
 
 module.exports = router;

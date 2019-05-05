@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://ryanwalker:mvnu332954@devconnector-ldbv0.mongodb.net/test?retryWrites=true"
+  "mongoURI": "mongodb+srv://ryanwalker:mvnu332954@devconnector-ldbv0.mongodb.net/test?retryWrites=true",
+  "jwtSecret": "Lalathis9eurjfndngdg"
 }
