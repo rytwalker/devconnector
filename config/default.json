@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://ryanwalker:mvnu332954@devconnector-ldbv0.mongodb.net/test?retryWrites=true",
-  "jwtSecret": "Lalathis9eurjfndngdg"
+  "jwtSecret": "Lalathis9eurjfndngdg",
+  "githubClientId": "10b6de6d7a711534680b",
+  "githubSecret": "e3cfde722169ed594e53a7167c16f7618f535cfc"
 }
