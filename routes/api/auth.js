@@ -8,9 +8,9 @@ const { check, validationResult } = require('express-validator/check');
 
 const User = require('../../models/User');
 
-// @route   GET api/users
-// @desc    Test route
-// @access  Public
+// @route   GET api/auth
+// @desc    Get user
+// @access  Private
 router.get('/', auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select('-password');
@@ -19,11 +19,9 @@ router.get('/', auth, async (req, res) => {
     console.error(err.message);
     res.status(500).json({ msg: 'Server error' });
   }
-
-  res.send('Auth router');
 });
 
-// @route   GET api/auth
+// @route   GET api/auth/login
 // @desc    Login route
 // @access  Public
 router.post(
