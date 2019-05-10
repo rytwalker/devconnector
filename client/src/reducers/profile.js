@@ -1,4 +1,5 @@
 import {
+  CLEAR_PROFILE,
   GET_PROFILE,
   GET_PROFILE_FAILURE,
   GET_PROFILE_SUCCESS
@@ -31,6 +32,13 @@ export default function(state = initialState, action) {
       return {
         ...state,
         error: payload,
+        loading: false
+      };
+    case CLEAR_PROFILE:
+      return {
+        ...state,
+        profile: null,
+        repos: [],
         loading: false
       };
     default:

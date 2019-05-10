@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { setAlert } from './alert';
 import {
+  CLEAR_PROFILE,
   LOGIN,
   LOGIN_FAILURE,
   LOGIN_SUCCESS,
@@ -92,5 +93,6 @@ export const login = (email, password) => async dispatch => {
 
 // Logout / Clear profile
 export const logout = () => dispatch => {
+  dispatch({ type: CLEAR_PROFILE });
   dispatch({ type: LOGOUT });
 };
